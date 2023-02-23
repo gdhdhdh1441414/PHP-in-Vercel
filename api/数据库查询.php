@@ -197,10 +197,11 @@ if ($page_cookiepwd != $page_pwd) {
 
 
 
+<a class="anniu1" align="left" href="http://207.246.87.236:8088/?pgsql=207.246.87.236&username=dbadmin&db=%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98&ns=public&sql=">
+        后台管理
+</a>
 
-
-
-
+ 
 
 
 
@@ -551,7 +552,66 @@ body{
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 5px 0 5px -3px rgba(0, 0, 0, .2) inset;
   box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 5px 0 5px -3px rgba(0, 0, 0, .2) inset;
 }
+
+
+
+/* CSS Document */
+.anniu{
+display:block;
+width:70px;
+height:24px;
+background-color:#333333;
+color:#FFFFFF;
+text-align:center;
+font-size:12px;
+line-height:25px;
+border-radius: 25px;
+border:none;
+box-shadow:none;
+text-decoration: none;
+transition: box-shadow 0.5s;
+-webkit-transition: box-shadow 0.5s;
+}
+.anniu:hover{
+    box-shadow:0px 0px 5px 1px #808080;
+}
+.anniu:active{
+    box-shadow:0px 0px 5px 1px #FF0000;
+}
+
+
+
+
+/* CSS Document */
+.anniu1{
+display:block;
+width:70px;
+height:24px;
+background-color:#d3d3d3;
+color:#FFFFFF;
+text-align:center;
+font-size:12px;
+line-height:25px;
+border-radius: 25px;
+border:none;
+box-shadow:none;
+text-decoration: none;
+transition: box-shadow 0.5s;
+-webkit-transition: box-shadow 0.5s;
+}
+.anniu:hover{
+    box-shadow:0px 0px 5px 1px #808080;
+}
+.anniu:active{
+    box-shadow:0px 0px 5px 1px #FF0000;
+}
+
+
 </style>
+
+
+
+
 </head>
 <body>
 <center>
@@ -562,63 +622,74 @@ body{
 
 <p></p>
 	
- 
+
+
+
 <form method="get" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
  <!-- <form action="数据库查询.php" method="get" value="Value-1" target="iframe">   -->
      <!--   <fieldset>  -->
         <p>
          <div style="position:relative;">
          <p>字段：  
- <select name="第一行搜索字段"  style="width: auto;">字段
+ <select name="第一行搜索字段"  style="width: 80px;">字段
+        <option value="<?php  echo $_GET['第一行搜索字段']; ?>"><?php  echo $_GET['第一行搜索字段']; ?></option>
         <option value="任意">任意</option>
         <option value="文件名">文件名</option>
         <option value="目录">目录</option>
         <option value="文件大小（字节）>">文件大小></option>
         <option value="文件大小（字节）=">文件大小=</option>
         <option value="文件大小（字节）<">文件大小<</option>
-    </select>            <input type="text" id="keyword1" name="keyword1" placeholder="关键词..." align="left" style="font-size:16px; width:30%">
+    </select>            <input type="text" id="keyword1" name="keyword1"  value="<?php  echo $_GET['keyword1']; ?>" placeholder="关键词..." align="left" style="font-size:16px; width:30%">
         </p>
     
         
          <p>字段：  
- <select name="第二行搜索字段"  style="width: auto;">字段
+ <select name="第二行搜索字段"  style="width: 80px;">字段
+        <option value="<?php  echo $_GET['第二行搜索字段']; ?>"><?php  echo $_GET['第二行搜索字段']; ?></option>
         <option value="任意">任意</option>
         <option value="文件名">文件名</option>
         <option value="目录">目录</option>
         <option value="文件大小（字节）>">文件大小></option>
         <option value="文件大小（字节）=">文件大小=</option>
         <option value="文件大小（字节）<">文件大小<</option>
-    </select>            <input type="text" id="keyword2" name="keyword2" placeholder="关键词..." align="left" style="font-size:16px; width:30%">
+    </select>            <input type="text" id="keyword2" name="keyword2"  value="<?php  echo $_GET['keyword2']; ?>" placeholder="关键词..." align="left" style="font-size:16px; width:30%">
         </p>
    
 
 
          <p>字段：  
- <select name="第三行搜索字段"  style="width: auto;">字段
+ <select name="第三行搜索字段"  style="width:80px;;">字段
+        <option value="<?php  echo $_GET['第三行搜索字段']; ?>"><?php  echo $_GET['第三行搜索字段']; ?></option>
         <option value="任意">任意</option>
         <option value="文件名">文件名</option>
         <option value="目录">目录</option>
         <option value="文件大小（字节）>">文件大小></option>
         <option value="文件大小（字节）=">文件大小=</option>
         <option value="文件大小（字节）<">文件大小<</option>
-    </select>            <input type="text" id="keyword3" name="keyword3" placeholder="关键词..." align="left" style="font-size:16px; width:30%">
+    </select>            <input type="text" id="keyword3" name="keyword3"  value="<?php  echo $_GET['keyword3']; ?>" placeholder="关键词..." align="left" style="font-size:16px; width:30%">
         </p>
 
 
          <p>字段：  
- <select name="第四行搜索字段"  style="width: auto;">字段
+ <select name="第四行搜索字段"  style="width: 80px;">字段
+        <option value="<?php  echo $_GET['第四行搜索字段']; ?>"><?php  echo $_GET['第四行搜索字段']; ?></option>
         <option value="任意">任意</option>
         <option value="文件名">文件名</option>
         <option value="目录">目录</option>
         <option value="文件大小（字节）>">文件大小></option>
         <option value="文件大小（字节）=">文件大小=</option>
         <option value="文件大小（字节）<">文件大小<</option>
-    </select>            <input type="text" id="keyword4" name="keyword4" placeholder="正则表达式..." align="left" style="font-size:16px; width:30%">
+    </select>            <input type="text" id="keyword4" name="keyword4"  value="<?php  echo $_GET['keyword4']; ?>" placeholder="正则表达式..." align="left" style="font-size:16px; width:30%">
         </p>
         
 
 
-
+<body>
+<a class="anniu" href="%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2.php?%E7%AC%AC%E4%B8%80%E8%A1%8C%E6%90%9C%E7%B4%A2%E5%AD%97%E6%AE%B5=%E4%BB%BB%E6%84%8F&keyword1=&%E7%AC%AC%E4%BA%8C%E8%A1%8C%E6%90%9C%E7%B4%A2%E5%AD%97%E6%AE%B5=%E4%BB%BB%E6%84%8F&keyword2=&%E7%AC%AC%E4%B8%89%E8%A1%8C%E6%90%9C%E7%B4%A2%E5%AD%97%E6%AE%B5=%E4%BB%BB%E6%84%8F&keyword3=&%E7%AC%AC%E5%9B%9B%E8%A1%8C%E6%90%9C%E7%B4%A2%E5%AD%97%E6%AE%B5=%E4%BB%BB%E6%84%8F&keyword4=&%E8%B4%A6%E6%88%B7=%E4%BB%BB%E6%84%8F&limit=100&res=0">
+        清空输入
+</a>
+</body>
+<br>
      
 <body>
 账号： <body onload="selectIndex();">
@@ -672,10 +743,8 @@ body{
 
         
 
-
-
-
 <p><button id="btn1" class="blue button" onclick="funa()" target="iframe">提交</button></p> <!--提交不会二次刷新的按钮-->
+
 <p hidden><button id="btn1" class="blue button"  onclick="href='数据库查询.php'">提交</button></p>  <!--提交会刷新-->
 <div1 id="abc" style="display: none">
 
@@ -725,7 +794,10 @@ $keyword1 = $_GET['keyword1'];
 $keyword2 = $_GET['keyword2'];  
 $keyword3 = $_GET['keyword3']; 
 $keyword4 = $_GET['keyword4'];
+
 $limit = $_GET['limit'];
+$res = $_GET['res'];
+if ($res == "0") {exit;}
 
 
     function formatSizeUnits($bytes) //MB、GB、TB、KB转字节
@@ -863,14 +935,34 @@ th, td {
     }
 
 
+main{
+min-height: calc(100vh - 200px); /* 这个200px是header和footer的高度 */
+}
+header,footer{
+height: 100px;
+line-height: 100px;
+}
 
-
+ 
+div{
+float:right;
+bottom:0px;
+}
 </style>';
 echo $res;  
 
+?>
 
 
 
+
+
+
+
+
+ 
+
+ 
 
 
 	
