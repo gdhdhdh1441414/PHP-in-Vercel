@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(0);
 header("Content-type: text/html; charset=utf-8");	
 /**
  * 检验私密页面的密码
